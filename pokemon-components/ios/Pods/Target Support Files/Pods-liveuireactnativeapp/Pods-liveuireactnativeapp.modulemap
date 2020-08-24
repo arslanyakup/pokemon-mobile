@@ -1,0 +1,6 @@
+module Pods_liveuireactnativeapp {
+  umbrella header "Pods-liveuireactnativeapp-umbrella.h"
+
+  export *
+  module * { export * }
+}

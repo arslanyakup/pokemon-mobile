@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_liveuireactnativeapp_liveuireactnativeappTests : NSObject
+@end
+@implementation PodsDummy_Pods_liveuireactnativeapp_liveuireactnativeappTests
+@end
