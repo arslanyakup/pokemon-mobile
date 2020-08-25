@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import 'react-native-gesture-handler';
 import { StyleSheet, StatusBar, View } from 'react-native';
@@ -25,7 +17,7 @@ const App: () => React$Node = () => {
       <View style={styles.flex1}>
         <Pokedex style={styles.pokedex} width={400} height={400} fill={colors.transparentGrey} />
         <NavigationContainer>
-          <StatusBar barStyle="dark-content" />
+          <StatusBar backgroundColor={colors.white} barStyle="dark-content" />
           <Stack.Navigator
             screenOptions={props => ({
               headerBackImage: () => <Back width={30} height={30} fill={colors.darkGreen} style={styles.horizontal20} />,
@@ -57,7 +49,9 @@ const styles = StyleSheet.create({
     flex: 1
   },
   header: {
-    shadowOffset: { height: 0, width: 0 }
+    shadowOffset: { height: 0, width: 0 },
+    backgroundColor: '#fff',
+    elevation: 0
   },
   horizontal20: {
     marginHorizontal: 20
