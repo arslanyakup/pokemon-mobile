@@ -6,16 +6,24 @@
 
 
 module.exports = {
-    hotReloadContext: 'src',
+    hotReloadContext: 'app',
     devPort: 5000,
     microPort: 5001,
     exposes: {
-        'foo': './src/index.js',
-        'loader': './src/CustomLoader.js',
+        'customLoader': './app/ui/CustomLoader.js',
+        'customTabView': './app/ui/CustomTab',
+        'pokeItemList': './app/business/PokeItemList.js',
+        'back': './app/svg/Back.js',
+        'pokedex': './app/svg/Pokedex.js',
+        'pokemon': './app/svg/Pokemon.js',
     },
     shared: [
         'react',
         'react-native',
+        'react-native-gesture-handler',
+        'react-native-reanimated',
+        'react-native-safe-area-context',
+        'react-native-svg',
         'theme',
     ],
     externals: {
@@ -24,11 +32,14 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$|jsx/,
-                exclude: /node_modules/,
-                use: ["babel-loader"],
-            },
-        ],
-    },
+                test: /\.(js|jsx|mjs)$/,
+                include: [
+                    /app\/*/,
+                    /node_modules\/react-native-/,
+                ],
+                loader: require.resolve('babel-loader'),
+            }
+        ]
+    }
 }
 

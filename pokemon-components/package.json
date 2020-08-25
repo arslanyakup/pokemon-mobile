@@ -12,13 +12,15 @@
     "lint": "eslint .",
     "docker": "docker build -t liveui/live-components:latest ./docker/",
     "docker-run": "docker run --rm -dit -p 5001:80 liveui/live-components:latest",
-    "docker-build": "npm run docker && npm run docker-run"
+    "docker-build": "npm run docker && npm run docker-run",
+    "svgr": "svgr ./utils/svg -d ./app/svg --native --icon --svg-props 'width=24,height=24'"
   },
   "dependencies": {
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-indicators": "^0.17.0",
-    "react-native-modal": "^11.5.6"
+    "react-native-modal": "^11.5.6",
+    "react-native-tab-view": "^2.15.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
@@ -26,6 +28,7 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/runtime": "^7.9.6",
     "@react-native-community/eslint-config": "^1.1.0",
+    "@svgr/cli": "^5.3.0",
     "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
     "concurrently": "^5.2.0",

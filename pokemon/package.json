@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "svgr": "svgr ./src/svgs -d ./src/components/svgs --native --icon --svg-props 'width=24,height=24'"
   },
   "dependencies": {
     "@composiv/liveui-core": "^0.1.0",
@@ -16,17 +17,20 @@
     "@react-navigation/native": "^5.7.3",
     "@react-navigation/stack": "^5.9.0",
     "axios": "^0.20.0",
+    "lodash": "^4.17.20",
     "react": "16.13.1",
     "react-native": "0.63.2",
     "react-native-gesture-handler": "^1.7.0",
     "react-native-reanimated": "^1.13.0",
     "react-native-safe-area-context": "^3.1.6",
-    "react-native-screens": "^2.10.1"
+    "react-native-screens": "^2.10.1",
+    "react-native-svg": "12.0.3"
   },
   "devDependencies": {
     "@babel/core": "7.11.4",
     "@babel/runtime": "7.11.2",
     "@react-native-community/eslint-config": "1.1.0",
+    "@svgr/cli": "^5.3.0",
     "babel-jest": "25.5.1",
     "eslint": "6.8.0",
     "jest": "25.5.4",
