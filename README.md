@@ -4,10 +4,10 @@
 
 <h2>Screenshots</h2>
 
-<p align="center">
-  <img width="280" src="https://github.com/arslanyakup/pokemon-mobile/blob/master/pokemon/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-08-26%20at%2019.20.52.png"/> 
-  <img width="280" src="https://github.com/arslanyakup/pokemon-mobile/blob/master/pokemon/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-08-26%20at%2019.20.37.png"/> 
-  <img width="280" src="https://github.com/arslanyakup/pokemon-mobile/blob/master/pokemon/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-08-26%20at%2019.20.30.png"/>       
+<p align="left">
+  <img width="220" src="https://github.com/arslanyakup/pokemon-mobile/blob/master/pokemon/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-08-26%20at%2019.20.52.png"/> 
+  <img width="220" src="https://github.com/arslanyakup/pokemon-mobile/blob/master/pokemon/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-08-26%20at%2019.20.37.png"/> 
+  <img width="220" src="https://github.com/arslanyakup/pokemon-mobile/blob/master/pokemon/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-08-26%20at%2019.20.30.png"/>       
 </p>
 
 <p>For design: https://dribbble.com/shots/6540871-Pokedex-App</p>
